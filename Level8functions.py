@@ -6,7 +6,7 @@ import random
 class BankAccount:
     def __init__(self, name):
         self.name = name
-        self.account_number = random.randint(1, 100)
+        self.account_number = random.randint(1000, 2000)
         self.balance = 0.0
     def __str__(self):
         return f"Account owner: {self.name}, Balance: ${self.balance:.2f}"
@@ -21,7 +21,7 @@ def deposit(account):
             amount = float(input("Enter deposit amount: "))
             if amount >= 0:
                 account.balance += amount
-                print (f'Remaining Balance: ${account.balance:.2f}')
+                print (f'New Balance: ${account.balance:.2f}')
                 return
             print("Input must be a number and greater than 0")
         except ValueError:
