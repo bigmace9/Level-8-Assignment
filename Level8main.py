@@ -8,6 +8,7 @@ print ("Welcome to the PBR Bank")
 name = input("Please enter your name: ")
 account = BankAccount(name)
 
+#Menu Options
 while True:
     print("\n Please choose an option: ")
     print("1. Make a Deposit")
@@ -16,7 +17,7 @@ while True:
     print("4. Quit")
 
     choice = input("Enter number here: ")
-
+# Making choices work
     if choice == "1":
         deposit(account)
     elif choice == "2":
